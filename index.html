@@ -1,69 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>INCE x | Agentes Aduanales</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
+  <!-- ENCABEZADO -->
   <header>
-    <img src="logo-inecex.jpg" alt="Logo Incex" class="logo">
+    <img src="logo-inecex.jpg" alt="Logo INCE x" class="logo" />
     <nav>
       <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#inicio">Inicio</a></li>
         <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#noticias">Noticias</a></li>
+        <li><a href="#ventajas">Ventajas</a></li>
+        <li><a href="#ubicaciones">Ubicaciones</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">
+  <!-- HERO -->
+  <section id="inicio" class="hero">
     <div class="hero-content">
-      <h1>Bienvenidos a INCE x</h1>
-      <p>Comprometidos con la excelencia en servicios aduanales.</p>
-      <a href="#contacto" class="btn">Contáctanos</a>
+      <h1>INCE x Agentes Aduanales</h1>
+      <p>Soluciones estratégicas para el comercio internacional</p>
+      <a href="#contacto" class="btn">Solicita información</a>
     </div>
   </section>
 
-  <section id="nosotros" class="seccion">
-    <h2>Sobre Nosotros</h2>
-    <p>Somos una asociación de agentes aduanales con sede en Guadalajara, dedicada a fortalecer el comercio internacional mediante servicios eficientes, seguros y profesionales.</p>
-  </section>
-
+  <!-- SERVICIOS -->
   <section id="servicios" class="seccion">
-    <h2>Servicios</h2>
+    <h2>Servicios Aduanales</h2>
     <div class="servicios-grid">
       <div class="servicio">
         <h3>Despacho Aduanal</h3>
-        <p>Gestión y trámite de importaciones y exportaciones.</p>
+        <p>Procesos eficientes para importación y exportación.</p>
       </div>
       <div class="servicio">
-        <h3>Asesoría Legal</h3>
-        <p>Asistencia en normativas y regulaciones aduanales.</p>
+        <h3>Consultoría</h3>
+        <p>Asesoría personalizada en regulaciones y tratados.</p>
       </div>
       <div class="servicio">
-        <h3>Logística Internacional</h3>
-        <p>Coordinación y seguimiento de mercancías en tránsito.</p>
+        <h3>Clasificación Arancelaria</h3>
+        <p>Determinación precisa de fracciones y tarifas.</p>
+      </div>
+      <div class="servicio">
+        <h3>Gestión Documental</h3>
+        <p>Optimización de trámites para cumplimiento normativo.</p>
       </div>
     </div>
   </section>
 
-  <section id="noticias" class="seccion">
-    <h2>Noticias y Eventos</h2>
-    <p>Próximamente publicaremos noticias y actualizaciones del sector aduanal.</p>
+  <!-- VENTAJAS -->
+  <section id="ventajas" class="ventajas">
+    <h2>¿Por qué elegirnos?</h2>
+    <div class="ventajas-grid">
+      <div class="ventaja">
+        <h3>+10 años de experiencia</h3>
+        <p>Respaldamos cada operación con solidez y confianza.</p>
+      </div>
+      <div class="ventaja">
+        <h3>Atención Personalizada</h3>
+        <p>Cada cliente es único. Nuestros servicios también.</p>
+      </div>
+      <div class="ventaja">
+        <h3>Presencia Nacional</h3>
+        <p>Red de agentes en los principales puertos y fronteras.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="contacto" class="seccion">
-    <h2>Contacto</h2>
-    <p>Para más información, envíanos un mensaje a nuestro correo institucional (próximamente disponible).</p>
+  <!-- UBICACIONES -->
+  <section id="ubicaciones" class="seccion">
+    <h2>Nuestras Oficinas</h2>
+    <p>Estamos presentes en puntos estratégicos para brindarte mejor cobertura:</p>
+    <ul class="ubicaciones-lista">
+      <li>Guadalajara</li>
+      <li>Manzanillo</li>
+      <li>Lázaro Cárdenas</li>
+      <li>Nuevo Laredo</li>
+      <li>CDMX</li>
+    </ul>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Mexico_location_map.svg/1280px-Mexico_location_map.svg.png" alt="Mapa de ubicaciones" class="mapa">
   </section>
 
+  <!-- CONTACTO -->
+  <section id="contacto" class="seccion contacto">
+    <h2>Contáctanos</h2>
+    <form>
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <textarea placeholder="Escribe tu mensaje" rows="4"></textarea>
+      <button type="submit" class="btn">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <!-- NOTICIAS -->
+  <section class="seccion noticias">
+    <h2>Noticias recientes</h2>
+    <div class="noticia">
+      <h3>Nuevo marco regulatorio para agentes aduanales</h3>
+      <p>Conoce los cambios aprobados en la legislación aduanera para 2025...</p>
+    </div>
+    <div class="noticia">
+      <h3>INCE x participará en ExpoLogística 2025</h3>
+      <p>La asociación estará presente con stand y conferencia especial...</p>
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
   <footer>
-    <p>&copy; 2025 INCE x | Asociación de Agentes Aduanales de Guadalajara. Todos los derechos reservados.</p>
+    <p>&copy; 2025 INCE x | Asociación de Agentes Aduanales de Guadalajara</p>
+    <p>Diseño demo sin contenido real</p>
   </footer>
 
 </body>
