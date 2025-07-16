@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>INCE x | Agentes Aduanales</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
@@ -15,8 +16,8 @@
       <ul>
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#ventajas">Ventajas</a></li>
-        <li><a href="#ubicaciones">Ubicaciones</a></li>
+        <li><a href="#historia">Historia</a></li>
+        <li><a href="#analisis">Análisis Económico</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -26,96 +27,123 @@
   <section id="inicio" class="hero">
     <div class="hero-content">
       <h1>INCE x Agentes Aduanales</h1>
-      <p>Soluciones estratégicas para el comercio internacional</p>
-      <a href="#contacto" class="btn">Solicita información</a>
+      <p>Comprometidos con el impulso del comercio internacional</p>
+      <a href="#contacto" class="btn">Contáctanos</a>
     </div>
   </section>
 
   <!-- SERVICIOS -->
   <section id="servicios" class="seccion">
-    <h2>Servicios Aduanales</h2>
-    <div class="servicios-grid">
-      <div class="servicio">
-        <h3>Despacho Aduanal</h3>
-        <p>Procesos eficientes para importación y exportación.</p>
-      </div>
-      <div class="servicio">
-        <h3>Consultoría</h3>
-        <p>Asesoría personalizada en regulaciones y tratados.</p>
-      </div>
-      <div class="servicio">
-        <h3>Clasificación Arancelaria</h3>
-        <p>Determinación precisa de fracciones y tarifas.</p>
-      </div>
-      <div class="servicio">
-        <h3>Gestión Documental</h3>
-        <p>Optimización de trámites para cumplimiento normativo.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- VENTAJAS -->
-  <section id="ventajas" class="ventajas">
-    <h2>¿Por qué elegirnos?</h2>
-    <div class="ventajas-grid">
-      <div class="ventaja">
-        <h3>+10 años de experiencia</h3>
-        <p>Respaldamos cada operación con solidez y confianza.</p>
-      </div>
-      <div class="ventaja">
-        <h3>Atención Personalizada</h3>
-        <p>Cada cliente es único. Nuestros servicios también.</p>
-      </div>
-      <div class="ventaja">
-        <h3>Presencia Nacional</h3>
-        <p>Red de agentes en los principales puertos y fronteras.</p>
+    <div class="contenedor-blanco">
+      <h2>Servicios Aduanales</h2>
+      <div class="servicios-grid">
+        <div class="servicio">
+          <h3>Despacho Aduanal</h3>
+          <p>Trámite eficiente para importación y exportación.</p>
+        </div>
+        <div class="servicio">
+          <h3>Asesoría Legal</h3>
+          <p>Consultoría en normativas y tratados internacionales.</p>
+        </div>
+        <div class="servicio">
+          <h3>Logística y Seguimiento</h3>
+          <p>Control de mercancías en tránsito.</p>
+        </div>
+        <div class="servicio">
+          <h3>Clasificación Arancelaria</h3>
+          <p>Determinación precisa de fracciones y tarifas.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- UBICACIONES -->
-  <section id="ubicaciones" class="seccion">
-    <h2>Nuestras Oficinas</h2>
-    <p>Estamos presentes en puntos estratégicos para brindarte mejor cobertura:</p>
-    <ul class="ubicaciones-lista">
-      <li>Guadalajara</li>
-      <li>Manzanillo</li>
-      <li>Lázaro Cárdenas</li>
-      <li>Nuevo Laredo</li>
-      <li>CDMX</li>
-    </ul>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Mexico_location_map.svg/1280px-Mexico_location_map.svg.png" alt="Mapa de ubicaciones" class="mapa">
+  <!-- HISTORIA -->
+  <section id="historia" class="seccion">
+    <div class="contenedor-blanco">
+      <h2>Nuestra Historia</h2>
+      <p>Desde nuestra fundación, hemos trabajado para representar a los agentes aduanales en el occidente del país, fomentando la actualización constante y la colaboración con autoridades.</p>
+      <p>Con más de una década de experiencia institucional, INCE x ha participado activamente en mesas de diálogo, eventos logísticos y foros de comercio exterior.</p>
+    </div>
+  </section>
+
+  <!-- ANÁLISIS ECONÓMICO -->
+  <section id="analisis" class="seccion">
+    <div class="contenedor-blanco">
+      <h2>Análisis Económico Global</h2>
+      <p>Entender las dinámicas del comercio internacional es vital para actuar estratégicamente en las operaciones aduanales.</p>
+
+      <canvas id="monedasChart" height="200"></canvas>
+
+      <p style="margin-top:2rem;">Las monedas más utilizadas reflejan los principales flujos comerciales globales.</p>
+
+      <canvas id="exportacionesChart" height="200"></canvas>
+    </div>
+  </section>
+
+  <!-- PREGUNTAS FRECUENTES -->
+  <section class="seccion">
+    <div class="contenedor-blanco">
+      <h2>Preguntas Frecuentes</h2>
+      <ul>
+        <li><strong>¿Qué necesito para importar?</strong> - Contactarnos y brindarte tu padrón, factura y documentos base.</li>
+        <li><strong>¿Ofrecen servicios fuera de México?</strong> - Contamos con aliados en diversas aduanas internacionales.</li>
+        <li><strong>¿Puedo importar como persona física?</strong> - Sí, siempre que cumplas con los requisitos.</li>
+      </ul>
+    </div>
   </section>
 
   <!-- CONTACTO -->
-  <section id="contacto" class="seccion contacto">
-    <h2>Contáctanos</h2>
-    <form>
-      <input type="text" placeholder="Nombre completo" required>
-      <input type="email" placeholder="Correo electrónico" required>
-      <textarea placeholder="Escribe tu mensaje" rows="4"></textarea>
-      <button type="submit" class="btn">Enviar mensaje</button>
-    </form>
-  </section>
-
-  <!-- NOTICIAS -->
-  <section class="seccion noticias">
-    <h2>Noticias recientes</h2>
-    <div class="noticia">
-      <h3>Nuevo marco regulatorio para agentes aduanales</h3>
-      <p>Conoce los cambios aprobados en la legislación aduanera para 2025...</p>
-    </div>
-    <div class="noticia">
-      <h3>INCE x participará en ExpoLogística 2025</h3>
-      <p>La asociación estará presente con stand y conferencia especial...</p>
+  <section id="contacto" class="seccion">
+    <div class="contenedor-blanco">
+      <h2>Contáctanos</h2>
+      <form>
+        <input type="text" placeholder="Nombre completo" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <textarea placeholder="Escribe tu mensaje" rows="4"></textarea>
+        <button type="submit" class="btn">Enviar mensaje</button>
+      </form>
     </div>
   </section>
 
-  <!-- PIE DE PÁGINA -->
+  <!-- FOOTER -->
   <footer>
     <p>&copy; 2025 INCE x | Asociación de Agentes Aduanales de Guadalajara</p>
-    <p>Diseño demo sin contenido real</p>
+    <p>Sitio demostrativo sin información oficial</p>
   </footer>
+
+  <!-- GRÁFICAS -->
+  <script>
+    const ctx1 = document.getElementById('monedasChart').getContext('2d');
+    new Chart(ctx1, {
+      type: 'pie',
+      data: {
+        labels: ['USD', 'EUR', 'CNY', 'JPY', 'GBP'],
+        datasets: [{
+          label: 'Monedas más utilizadas en comercio internacional',
+          data: [45, 23, 12, 10, 10],
+          backgroundColor: ['#d4af37', '#800020', '#999', '#ccc', '#555'],
+        }]
+      }
+    });
+
+    const ctx2 = document.getElementById('exportacionesChart').getContext('2d');
+    new Chart(ctx2, {
+      type: 'bar',
+      data: {
+        labels: ['China', 'USA', 'Alemania', 'Países Bajos', 'Japón'],
+        datasets: [{
+          label: 'Exportaciones (billones USD)',
+          data: [3.3, 2.1, 1.7, 1.2, 0.9],
+          backgroundColor: 'rgba(128, 0, 32, 0.8)',
+        }]
+      },
+      options: {
+        scales: {
+          y: { beginAtZero: true }
+        }
+      }
+    });
+  </script>
 
 </body>
 </html>
